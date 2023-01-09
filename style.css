@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "poppins", sans-serif;
+}
+
+body{
+    overflow: hidden;
+}
+
+.background{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.cabeçalho-link{
+    display: flex;
+    gap: 3rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.cabeçalho-link a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 0px 50px 10px 0;
+    font-size: 20pt;
+    position: relative;
+    
+}
+
+.cabeçalho-link a::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: #8427c2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.cabeçalho-link a:hover::after{
+    width: 100%;
+}
+
+.cabeçalho-link a:hover{
+    color: #8427c2;
+    transition: 0.3s;
+}
+
+.logo{
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    color: #000000;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18pt;
+    cursor: pointer;  
+    text-decoration: none;
+    padding: 0px 30px 10px 10;
+    position: relative;
+}
+
+.logo::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: #8427c2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.logo:hover::after{
+    width: 100%;
+}
+
+.logo:hover{
+    color: #8427c2;
+    transition: 0.3s;
+}
+
+button{
+    color: #000000;
+    background: transparent;
+    border: solid 1px #8427c2;
+    padding: 5px;
+    font-size: 12px;
+    width: 150px;
+}
+
+button:hover{
+    background-color: #8427c2;
+    color: #000000;
+    transition: 1s;
+}
+
+.container-text{
+    padding: 250px 0 0 380px;
+}
+
+.text h3{
+    color: #000000;
+}
+
+.text h1{
+    color: #000000;
+    margin-top: 10px;
+}
+
+.text span{
+    color: #8427c2;
+}
+
+.text p{
+    color: black;
+    
+    margin-top: 10px;
+}
+
+.redes-sociais a{
+    color: #8427c2;
+    padding: 10px;
+    margin-top: 5px;
+}
